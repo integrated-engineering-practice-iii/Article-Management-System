@@ -5,14 +5,14 @@
 <title>注册页</title>
 <link href="css/base.css" rel="stylesheet">
 <link href="css/index.css" rel="stylesheet">
-<link href="css/about_.css" rel="stylesheet">
+<link href="css/login.css" rel="stylesheet">
 </head>
 
 <body>
 <header>
   <div id="logo"><a href="/"></a></div>
   <nav class="topnav" id="topnav">
-    <a href="index_.html">
+    <a href="index.html">
       <span>首页</span>
       <span class="en">Protal</span>
     </a>
@@ -24,7 +24,7 @@
       <span>博文列表</span>
       <span class="en">Doing</span>
     </a> -->
-    <a href="about_1.html">
+    <a href="register.html">
       <span>注册</span>
       <span class="en">About</span>
     </a>
@@ -35,12 +35,16 @@
   <h2 class="title_tj">
     <p><span>注册</span></p>
   </h2>
-  <div class="login">
+  <div class="login1">
     <form action="" method="post">
       <input type="text" name="user" placeholder="用户名" required="required">
-      <input type="password" name="password" placeholder="密  码" required="required">
-      <button type="submit">注册</button>
-      <p><a href="about_.html">返回登录页</a></p>
+      <input type="password" id="psw" name="password" placeholder="密  码" required="required" onkeyup="compare();">
+      <input type="password" id="psw1" name="password1" placeholder="确认密码" required="required" onkeyup="compare();">
+      <input type="tel" id="tel" name="telephone" placeholder="电 话" required="required"> 
+      <div id="ts"></div>
+      <button type="submit" style="margin-left: 350px">重置</button>
+      <button type="submit" style="margin-top: -40px;margin-left: 50px">注册</button>
+      <p><a href="login.html">返回登录页</a></p>
     </form>
   </div>
 </article>
@@ -50,6 +54,16 @@
 </footer>
 
 <script src="js/silder.js"></script>
-
+<script>
+function compare(){
+var a=document.getElementById('psw').value;
+var b=document.getElementById('psw1').value;
+if(a==b){
+document.getElementById('ts').innerHTML="密码一致!";
+}else{
+document.getElementById('ts').innerHTML="两次密码不一致!";
+}
+}
+</script>
 </body>
 </html>

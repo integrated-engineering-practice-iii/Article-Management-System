@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>用户页|修改个人信息</title>
+<link href="css/base.css" rel="stylesheet">
+<link href="css/index.css" rel="stylesheet">
+<link href="css/user.css" rel="stylesheet">
+<link href="css/login.css" rel="stylesheet">
+</head>
+
+<body>
+<header>
+  <div id="logo"><a href="/"></a></div>
+  <nav class="topnav" id="topnav">
+    <a href="login.html">
+      <span>退出</span>
+      <span class="en">About</span>
+    </a>
+  </nav>
+</header>
+
+<article>
+  <h2 class="title_tj">
+    <p>登录用户是：<span>11</span></p>
+  </h2>
+  <div class="center_first" >
+    <div style="color:red;"><p style="font-size: 20px;margin-top: 10px;margin-bottom: 10px;">用户等级1</p></div>
+    <div style="font-size: 18px;margin-top: 32px;margin-left: 25%;">
+        <a href="user_1.html"><span>国内</span></a>
+        <a href="user_2.html"><span>国际</span></a>
+        <a href="user_3.html"><span>军事</span></a>
+        <a href="user_4.html"><span>财经</span></a>
+        <a href="user_5.html"><span>娱乐</span></a>
+        <a href="user_6.html"><span>体育</span></a>
+        <a href="mynews.html"><span>我的新闻</span></a>
+        <a href="news_write.html"><span>书写新闻</span></a>
+        <a href="user_modify.html"><span>修改个人信息</span></a>
+    </div>
+    
+   <div class="login1">
+    <form action="" method="post">
+      <input type="text" name="user" placeholder="用户名" required="required">
+      <input type="password" id="psw" name="password" placeholder="密  码" required="required" onkeyup="compare();">
+      <input type="password" id="psw1" name="password1" placeholder="确认密码" required="required" onkeyup="compare();">
+      <input type="tel" id="tel" name="telephone" placeholder="电 话" required="required"> 
+      <div id="ts"></div>
+      <button type="submit" >重置</button>
+     <!--  <button type="submit" style="margin-top: -40px;margin-left: 50px">注册</button> -->
+      <p><a href="login.html">返回登录页</a></p>
+    </form>
+   </div>
+  </div>
+</article>
+
+<footer>
+  <p>版权所有@2019<a href="/"></a></p>
+</footer>
+
+<script src="js/silder.js"></script>
+<script src="js/jquery.js"></script>
+<script>
+  
+</script>
+</script>
+</body>
+</html>

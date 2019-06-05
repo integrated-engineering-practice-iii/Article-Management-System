@@ -43,6 +43,14 @@ aside .rnav ul li a:hover { background: rgba(255,255,255,0.2); -webkit-transform
 .page a {margin: 0 2px;height: 26px;line-height: 26px;border-radius: 50%;width: 26px;text-align: center;display: inline-block}/* Õë¶ÔIE6 */
 .page>b,.page a:hover{background: #333;color: #FFF;}
 .page a {color: #F33;border: #999 1px solid;}
-
+body {
+    width:  100%;
+    height: 100%;
+    background-image: url(../images/background-home-one.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin: 0;
+    padding: 0;
+}
 
 

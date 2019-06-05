@@ -5,14 +5,14 @@
 <title>登录|注册页</title>
 <link href="css/base.css" rel="stylesheet">
 <link href="css/index.css" rel="stylesheet">
-<link href="css/about_.css" rel="stylesheet">
+<link href="css/login.css" rel="stylesheet">
 </head>
 
 <body>
 <header>
   <div id="logo"><a href="/"></a></div>
   <nav class="topnav" id="topnav">
-    <a href="index_.html">
+    <a href="index.html">
       <span>首页</span>
       <span class="en">Protal</span>
     </a>
@@ -24,7 +24,7 @@
       <span>博文列表</span>
       <span class="en">Doing</span>
     </a> -->
-    <a href="about_.html">
+    <a href="login.html">
       <span>登录|注册</span>
       <span class="en">About</span>
     </a>
@@ -39,16 +39,17 @@
     <form action="" method="post">
       <input type="text" id="username" name="user" placeholder="用户名" required="required">
       <input type="password" id="psw" name="password" placeholder="密  码" required="required">
-      <button type="submit" id="submit" onclick="login()"><a href="newlist_.html">登录</a></button>
-      <p><a href="about_1.html">注册</a></p>
+     <!--  <input type="password" id="psw1" name="password1" placeholder="确认密码" required="required" onkeyup="compare();">
+      <div id="ts"></div> -->
+      <button type="submit" id="submit" onclick="login()"><a href="user.html">登录</a></button>
+      <p><a href="register.html">注册</a></p>
     </form>
   </div>
 </article>
-
 <footer>
   <p>版权所有@2019<a href="/"></a></p>
 </footer>
-
+<!-- <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.4.1.js"></script> -->
 <script src="js/silder.js"></script>
 <script src="js/jquery.js"></script>
 <script type="text/javascript">
@@ -62,6 +63,6 @@
   //   }
   // }
       </script>
-</script>
+<!--  -->
 </body>
 </html>
