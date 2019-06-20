@@ -1,50 +1,50 @@
-һ��С���Ա
-   ����   2016012102
-   �����2016012086
-   ������2016012002
-   ��ӱ   2016012051
+一、小组成员
+   曹滢   2016012102
+   杨岚青 2016012086
+   吕乐乐 2016012002
+   裴颖   2016012051
 
-������Ա�ֹ�
-   ���ޣ���Ҫ������Ŀǰ�˴��롢�����������Ա�ֹ�����Ŀ�ϴ����ĵ�׫д�ȡ�
-   ����ࣺ��Ҫ������Ŀ��˴��롢���ݿ⽨����ǰ��˴���ϲ�����Ŀ˵���ȡ�
-   �����֣������˴��롣
-   ��ӱ������ǰ�˴��롣
+二、成员分工
+   曹滢————主要负责项目前端代码。同时负责需求分析、成员分工、项目上传和文档撰写等。
+   杨岚青——主要负责项目后端代码。同时负责数据库建立、前后端代码合并和项目说明等。
+   吕乐乐——负责部分后端代码。
+   裴颖————负责部分前端代码。
 
-������������
-   ��ܣ�Maven+Hibernate+Struct+Spring
-   ������IDEA
-   ���ݿ⣺mysql �����ݿ�����mews1���û�����root�������롰�������벻��ɣ���
-  �����ݿ�ű�����Navicat��������Ϊ��news.iml����
+三、环境配置
+   框架：Maven+Hibernate+Struct+Spring
+   环境：IDEA
+   数据库：mysql 。数据库名—mews1、用户名“root”、密码“”（密码不填即可）。
+  （数据库脚本已用Navicat导出，名为“news.iml”）
 
-�ġ���Ŀ�
-      ����˼·���ȴ���˻���SSH��web���̣����úø�����ܵ������ļ�ȷ���ø����ļ���Ŀ¼��
-�������ݿ������ʵ��bean�Լ�hibernate ӳ���ļ���Ȼ�����ʵ��bean ʹ�÷��������action��
-dao��jsp���ļ�ʵ�ָ�ʵ��bean����ɾ�ĳɹ��ܡ�
-      ��Ŀʹ��SSH��ܹ���J2EE web��ͬʱ�Ը���ģ�����MVC������ļ��͸�ģ���������ɾ�Ĳ�
-�Ĺ��ܡ�
-      ��Ŀʹ��hibernate�������ݳ־û�������hibernate����������ļ���Ϣ��pojo��Ϣ,�Զ�����
-���ݿ����
-      �����Ǵweb���̣��½�maven����ʹ��maven��������Ŀ����������struts��Spring��Hibernate��
-֮����Ǿ���ĳ�����ݿ������ɾ�Ĳ�ģ�顣�����ǽ������ݿ����дʵ��bean�Լ�hibernateӳ���ļ���
-Ȼ��дDAO����dao�༯����HibernateDaoSupportͨ��getHibernateTemplate()������ɾ�Ĳ������Ȼ
-����Action��action�̳���ActionSupport��struts action��Ϊcontroller���ݲ�ͬ��������ò�ͬ�ķ�����
-���ز�ͬ��result����result������ǰ�˽��棬������ҳ�����Ⱦ��
+四、项目搭建
+      总体思路是先搭建好了基于SSH的web工程，配置好各个框架的配置文件确定好各层文件的目录。
+根据数据库表生成实体bean以及hibernate 映射文件，然后根据实体bean 使用反射等生成action、
+dao、jsp等文件实现该实体bean的增删改成功能。
+      项目使用SSH框架构建J2EE web，同时对各个模块编码MVC各层的文件和该模块基本的增删改查
+的功能。
+      项目使用hibernate进行数据持久化的任务。hibernate会根据配置文件信息和pojo信息,自动生成
+数据库表。
+      首先是搭建web工程，新建maven工程使用maven来进行项目管理。配置struts、Spring、Hibernate。
+之后就是具体某个数据库表的增删改查模块。首先是建立数据库表，写实体bean以及hibernate映射文件；
+然后写DAO，让dao类集成自HibernateDaoSupport通过getHibernateTemplate()继续增删改查操作；然
+后是Action，action继承自ActionSupport，struts action作为controller根据不同的请求调用不同的方法，
+返回不同的result。将result传送至前端界面，并进行页面的渲染。
 
-�塢��Ŀģ�飨�޷�����ͼƬ����˶�Ӧ��ͼ������word�ĵ���
-    1��������ҳ
-    2�����ͷ��ࣺ�������ֺ;���������Ŀ������鿴����Ŀ�������ݿ���д���ġ�
-    3���û�����
-    4�����Ź������༭��ɾ�����ã�
-         ����ƶ����û�ͷ���ҵ���̨����ҳ�档
-      ��1��ɾ������
-      ��2���޸�����
-      ��3����������
-      ��4����������ҳ���������⡢��Ŀ�������ݿ������е���Ŀ����ѡ�񣩡���š����ݡ�
+五、项目模块（无法插入图片，因此对应截图另附上word文档）
+    1、新闻首页
+    2、博客分类：包括娱乐和军事两个栏目，方便查看，栏目是在数据库中写死的。
+    3、用户管理
+    4、新闻管理（编辑、删除可用）
+         鼠标移动到用户头像找到后台管理页面。
+      （1）删除新闻
+      （2）修改新闻
+      （3）查找新闻
+      （4）增加新闻页：包括标题、栏目（从数据库中已有的栏目进行选择）、编号、内容。
 
-������Ŀ����Ч����ͼ������word�ĵ���
+六、项目运行效果截图（另附word文档）
 
 
-�ߡ�����˵��
-       ÿ��ÿ���ύ���ļ������ɲ���ͬѧ��ǰ��˴��������ͨ��git�ϴ�������Ϊ������ϣ��������
-�ϴ���һ�ݻ��ܺ���ļ����ļ��е�������£�ʹ��GitHub��û����֮ǰ���ϴ�����ʷ��¼����ÿ����
-����GitHub���������ͬѧ�����䷢��Ϣ����ͼһͬ����word�ĵ��С�
+七、补充说明
+       每次每人提交的文件，均由曹滢同学将前后端代码分批次通过git上传，但因为最后整合，因此重新
+上传了一份汇总后的文件。文件夹的整体更新，使得GitHub中没有了之前的上传的历史记录。但每次提
+交，GitHub均会向曹滢同学的邮箱发信息，截图一同附在word文档中。
